@@ -4,10 +4,10 @@ This public repository hosts the **user documentation, Azure collector script, s
 
 ## Documentation & Worked Examples
 
-- **Web Documentation (with 1-click "Open in Simulator" links):** [https://vwan-simulator.com/docs/](https://vwan-simulator.com/docs/)
-- **Markdown User Guide & Annotated Screenshots:** [docs/README.md](./docs/README.md)
+- **Web Documentation (with 1-click "Open in Simulator" links):** [English (`https://vwan-simulator.com/docs/`)](https://vwan-simulator.com/docs/) | [日本語 (`https://vwan-simulator.com/docs/?lang=ja`)](https://vwan-simulator.com/docs/?lang=ja)
+- **Markdown User Guide & Annotated Screenshots:** [English (`docs/README.md`)](./docs/README.md) | [日本語 (`docs/README.ja.md`)](./docs/README.ja.md)
 - **Azure Collector Script (`collect-azure-vwan.ps1`):** [scripts/collect-azure-vwan.ps1](./scripts/collect-azure-vwan.ps1)
-- **Downloadable Sample Topologies (.json):** [samples/](./samples/)
+- **Downloadable Sample Topologies (.json):** [English (`samples/README.md`)](./samples/README.md) | [日本語 (`samples/README.ja.md`)](./samples/README.ja.md)
 
 | Sample Topology | Key Features Demonstrated | Try Live | JSON File |
 |---|---|---|---|
