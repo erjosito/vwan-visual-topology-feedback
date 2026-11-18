@@ -1,6 +1,8 @@
-# Azure Virtual WAN Visual Topology Simulator — Documentation, Scripts & Public Feedback
+# Azure Network Simulator (AzNetSim) — Documentation & Scripts
 
-This public repository hosts the **user documentation, Azure collector script, sample JSON topologies, and public issue tracker** for the **[Azure Virtual WAN Visual Topology Simulator](https://vwan-simulator.com)**.
+This public repository hosts **user documentation, an Azure collector script, and sample JSON topologies** for **[Azure Network Simulator (AzNetSim)](https://aznet-simulator.com)**.
+
+> **Feedback has moved:** Please report bugs and request features in the [main application's issue tracker](https://github.com/erjosito/vwan-visual-topology/issues). The application now covers VNets, hub-and-spoke, Virtual WAN and hybrid networks. This repository stays available for existing documentation, script and sample links.
 
 ## Documentation & Worked Examples
 
@@ -22,11 +24,11 @@ To capture a read-only snapshot of an existing Azure Virtual WAN environment (st
 
 ```powershell
 Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/erjosito/vwan-visual-topology-feedback/main/scripts/collect-azure-vwan.ps1' -OutFile ./collect-azure-vwan.ps1
-pwsh ./collect-azure-vwan.ps1 -SubscriptionId <subscription-id> -OutputPath ./azure-vwan-observation.json -Anonymize -IncludeEffectiveRoutes
+pwsh ./collect-azure-vwan.ps1 -VirtualWanId '/subscriptions/<subscription-id>/resourceGroups/<resource-group>/providers/Microsoft.Network/virtualWans/<wan-name>' -OutputFile ./azure-vwan-observation.json -IncludeEffectiveRoutes
 ```
 
 ## Submitting Feedback
 
-You can submit feedback directly from the simulator (**Feedback** button in the top bar, which pre-fills the app revision and structured fields without requiring any OAuth app consent), or by [opening a new issue here](https://github.com/erjosito/vwan-visual-topology-feedback/issues/new).
+Please [open new reports in the main application's issue tracker](https://github.com/erjosito/vwan-visual-topology/issues/new). The simulator's **Feedback** form is being updated to use that same tracker; already published app versions may still link here until the next explicit release. Existing reports are being reviewed and either resolved with evidence or transferred with their original authorship and discussion preserved.
 
 > **Privacy & Security Notice:** Please do not include secrets, credentials, or confidential customer network topologies/IP addresses in public issues. Use sanitized or synthetic prefixes when sharing reproduction steps.
